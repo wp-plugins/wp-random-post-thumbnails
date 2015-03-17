@@ -18,8 +18,10 @@ class WPRPT {
 
         $this->init_options_page();
 
-        add_filter( 'post_thumbnail_id', array($this, 'set_post_thumbnail_id') );
-        add_filter( 'get_post_metadata', array($this, 'filter_get_post_metadata') , 10, 4);
+	    if ( ! is_admin() ) {
+		    add_filter( 'post_thumbnail_id', array($this, 'set_post_thumbnail_id') );
+		    add_filter( 'get_post_metadata', array($this, 'filter_get_post_metadata') , 10, 4);
+	    }
 
     }
 
