@@ -95,7 +95,8 @@ class WPRPT {
 
         // Grab a random image and return the ID
         $image_id = wprpt_get_random_image();
-        return $image_id;
+
+        return !empty($image_id) ? $image_id : $thumbnail_id;
 
     }
 

@@ -2,8 +2,6 @@
 
 Allows you to upload images to be used as random images for posts.  This plugin shows one of the uploaded images as the featured image for a post (if the post doesn't have one attached already). Useful if your theme shows thumbnails for the posts, and you don't want any posts without images.
 
-I submitted this plugin to Wordpress.org and I'm currently waiting on approval.  I hope it gets approved!
-
 ## Installation
 
 1. Upload the `wp-random-thumbnails` folder to the `/wp-content/plugins/` directory.
@@ -17,4 +15,15 @@ None yet!
 
 ## Changelog
 
-[ 1.0.0 ] Initial release.
+[ 1.2.1 ]
+
+* Fixing an issue when a user doesn't upload any images through the settings page.
+
+[ 1.2.0 ]
+
+* Fixing a fatal error on the options page.
+* Removing an unncecessary tag directory.
+
+[ 1.0.0 ] 
+
+* Initial release.

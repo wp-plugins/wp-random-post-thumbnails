@@ -3,7 +3,7 @@
 Plugin Name: WP Random Post Thumbnails
 Plugin URI: https://github.com/bdeleasa/wp-random-thumbnails
 Description: Allows you to upload images to be used as random images for posts.  This plugin shows one of the uploaded images as the featured image for a post (if the post doesn't have one attached already). Useful if your theme shows thumbnails for the posts, and you don't want any posts without images.
-Version: 1.0.1
+Version: 1.2.1
 Author: Brianna Deleasa
 Author URI: http://www.briannadeleasa.com
 License: GPL v3
