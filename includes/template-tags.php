@@ -30,6 +30,11 @@ function wprpt_get_option( $key = '' ) {
 function wprpt_get_random_image() {
 
     $all_images = wprpt_get_option( 'images' );
+
+	// Get out if the user didn't upload any random images
+	if ( !is_array($all_images) )
+		return;
+
     $random_image = array_rand($all_images, 1);
     return $random_image;
 

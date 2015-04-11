@@ -3,7 +3,7 @@ Contributors: bdeleasa
 Tags: post thumbnails, random images, random featured images
 Tested up to: 4.1
 Requires at least: 3.5
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,10 @@ None yet!
 Nothing needs noting.  This is the initial version of the plugin.
 
 == Changelog ==
+
+= 1.2.1 =
+
+* Fixing an issue when a user doesn't upload any images through the settings page.
 
 = 1.2.0 =
 
