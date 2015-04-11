@@ -3,7 +3,7 @@ Contributors: bdeleasa
 Tags: post thumbnails, random images, random featured images
 Tested up to: 4.1
 Requires at least: 3.5
-Stable tag: 1.0.2
+Stable tag: 1.2.0
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,12 @@ None yet!
 Nothing needs noting.  This is the initial version of the plugin.
 
 == Changelog ==
+
+= 1.2.0 =
+
+* Fixing a fatal error on the options page.
+* Removing an unncecessary tag directory.
+
 = 1.0.0 =
 
 Initial release.
