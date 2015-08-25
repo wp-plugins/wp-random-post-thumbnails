@@ -1,7 +1,7 @@
 === WP Random Post Thumbnails ===
 Contributors: bdeleasa
 Tags: post thumbnails, random images, random featured images
-Tested up to: 4.1
+Tested up to: 4.3
 Requires at least: 3.5
 Stable tag: 1.2.1
 License: GPL v3
