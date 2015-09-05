@@ -90,8 +90,9 @@ class WPRPT {
         $selected_post_types = wprpt_get_post_types();
 
         // Get out if this isn't a valid selected post type
-        if ( ! in_array( get_post_type(), $selected_post_types ) )
+        if ( is_array($selected_post_types) && ! in_array( get_post_type(), $selected_post_types ) ) {
             return $thumbnail_id;
+        }
 
         // Grab a random image and return the ID
         $image_id = wprpt_get_random_image();
