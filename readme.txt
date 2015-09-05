@@ -3,7 +3,7 @@ Contributors: bdeleasa
 Tags: post thumbnails, random images, random featured images
 Tested up to: 4.3
 Requires at least: 3.5
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,11 @@ None yet!
 Nothing needs noting.  This is the initial version of the plugin.
 
 == Changelog ==
+
+= 1.3.0
+
+* Fixing PHP warnings that occurred when installing the plugin and not configuring any settings.
+* Moving the CMB script inclusion to the main plugin file.
 
 = 1.2.1 =
 

@@ -25,9 +25,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-// Define some constants
-define( 'WPRPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-
 
 // Require our includes and classes
 require_once 'includes/template-tags.php';
@@ -35,7 +32,7 @@ require_once 'classes/class-wprpt-options.php';
 require_once 'classes/class-wprpt.php';
 
 
-add_action( 'init', 'wprpt_init' );
+add_action( 'init', 'wprpt_init', 20 );
 /**
  * Start up the plugin
  *
@@ -45,5 +42,22 @@ add_action( 'init', 'wprpt_init' );
 function wprpt_init() {
 
     WPRPT::init();
+
+}
+
+
+add_action( 'init', 'wprpt_initialize_cmb_init', 10 );
+/**
+ * Includes the necessary CMB init file
+ *
+ * @param none
+ * @return none
+ * @since 1.0.2
+ */
+function wprpt_initialize_cmb_init() {
+
+    if ( !class_exists( 'cmb_Meta_Box' ) ) {
+        require_once 'includes/cmb/init.php';
+    }
 
 }
