@@ -18,12 +18,10 @@ class WPRPT {
 
         $this->init_options_page();
 
-	    if ( ! is_admin() ) {
-		    add_filter( 'post_thumbnail_id', array($this, 'set_post_thumbnail_id') );
-		    add_filter( 'get_post_metadata', array($this, 'filter_get_post_metadata') , 10, 4);
-	    }
-
-	    add_action( 'init', array($this, 'initialize_cmb_init'), 9999 );
+        if ( ! is_admin() ) {
+            add_filter( 'post_thumbnail_id', array($this, 'set_post_thumbnail_id') );
+            add_filter( 'get_post_metadata', array($this, 'filter_get_post_metadata') , 10, 4);
+        }
 
     }
 
@@ -43,22 +41,6 @@ class WPRPT {
         return self::$instance;
 
     }
-
-
-	/**
-	 * Includes the necessary CMB init file
-	 *
-	 * @param none
-	 * @return none
-	 * @since 1.0.2
-	 */
-	function initialize_cmb_init() {
-
-		if ( !class_exists( 'cmb_Meta_Box' ) ) {
-			require_once( WPRPT_PLUGIN_DIR . 'includes/cmb/init.php' );
-		}
-
-	}
 
 
     /**
