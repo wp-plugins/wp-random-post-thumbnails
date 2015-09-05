@@ -1,6 +1,6 @@
 === WP Random Post Thumbnails ===
 Contributors: bdeleasa
-Tags: post thumbnails, random images, random featured images
+Tags: post thumbnails, random images, random featured images, random post thumbnails, random post thumbnail
 Tested up to: 4.3
 Requires at least: 3.5
 Stable tag: 1.3.0
